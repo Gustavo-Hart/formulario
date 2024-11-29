@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(234, 219, 245);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.top{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(172, 8, 248);
+}
+.form-container {
+    
+    margin: auto;
+    align-self: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px; 
+    color: #333;
+}
+.Especificacoes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    align-content: center;
+}
+
+
+
+button:hover {
+    background-color: #45a049;
+    align-items: center;
+    
+}
+
+textarea {
+    resize: vertical;
+}
+.caixas {
+    display: flex;          /* Usando flexbox para alinhar os itens em linha */
+    justify-content: space-between; /* Espaço igual entre os itens */
+    flex-wrap: wrap;        /* Permite a quebra das linhas */
+}
+
+.caixas label {
+    width: 45%;             /* Cada label ocupa 45% da largura disponível */
+    margin-bottom: 10px;    /* Espaçamento entre as linhas */
+}
+
+/* Ajuste para responsividade, garantindo que as caixas fiquem bem organizadas em telas menores */
+@media (max-width: 600px) {
+    .caixas label {
+        width: 100%;       /* Em telas pequenas, cada label ocupa a largura total */
+    }
+}

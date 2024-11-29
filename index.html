@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Venda de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="form-container">
+            <h1>Formulario de Venda de Carros</h1>
+            <form action="#" method="POST">
+                <label for="nome">Nome do Comprador:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email do Comprador:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="modelo">Modelo do Carro:</label>
+                <input type="text" id="modelo" name="modelo" required>
+
+                <label for="ano">Ano de Fabricação:</label>
+                <input type="number" id="ano" name="ano" min="1900" max="2024" required>
+
+                <label for="preco">Preço do Carro (R$):</label>
+                <input type="number" id="preco" name="preco" step="0.01" required>
+
+                <label for="cor">Cor do Carro:</label>
+                <input type="text" id="cor" name="cor" required>
+
+                <label for="Kilometragem">Kilometragem:</label>
+                <input type="number" id="Kilometragem" name="Kilometragem" step="0.01" required>
+
+
+                <label for="data_venda">Data da Venda:</label>
+                <input type="date" id="data_venda" name="data_venda" required>
+
+                <label for="descricao">Descrição do Carro:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+                <h3>Tipo de Cambio</h3>
+                <div style="display: flex; flex-direction: row; gap: 5px;">
+                    <label for=""><input type="radio" name="Manual">Manual</label><br>
+                    <label for=""><input type="radio" name="Altomatico">altomatico</label><br>
+                </div>
+                
+                   
+                        <h3>Especificações do Carro:</h3>
+                    <div class="caixas">
+                        <label><input type="checkbox" name="acessorios" value="Ar condicionado"> Ar
+                            condicionado</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Direção hidráulica"> Direção
+                            hidráulica</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Airbags"> Airbags</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Rodas de liga leve"> Rodas de liga
+                            leve</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Câmbio automático"> Câmbio
+                            automático</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Faróis de neblina"> Faróis de
+                            neblina</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Alarme"> Alarme</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Câmera de Ré"> Câmera de Ré</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Banco de Couro"> Banco de
+                            Couro</label><br>
+                        <label><input type="checkbox" name="acessorios" value="Partida Keyless"> Partida
+                            Keyless</label><br>
+                    </div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
